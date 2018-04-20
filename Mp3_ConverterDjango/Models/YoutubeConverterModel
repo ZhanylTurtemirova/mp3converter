@@ -1,0 +1,11 @@
+from django.forms import models
+
+
+
+
+class YoutubeConverterModel(memoryview.Model):
+    title = models.CharField(max_length=255, verbose_name='Title')
+    mp3_file = models.FileField(upload_to='myaudio', verbose_name='mp3 File')
+
+
+
